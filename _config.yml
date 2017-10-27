@@ -18,7 +18,7 @@ feed:
   description: >
     Awesome Company's Blog
 lang: en
-baseurl: "" # the subpath of your site, e.g. /blog (must not end with /)
+baseurl: "/ghpages-bootstrap4" # the subpath of your site, e.g. /blog (must not end with /)
 
 # Build settings
 markdown: kramdown
