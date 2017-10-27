@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset 'utf-8';
+@import 'custom'; // variables for bootstrap
+@import 'bootstrap';
+
+.jumbotron {
+    background-image: url(http://placekitten.com/g/1000/400);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+// Sticky Footer:
+
+$footer-height: 150px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $footer-height;
+}
+
+.site-footer {
+  background-color: $gray-100;
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  line-height: 60px;
+  width: 100%;
+}
+
+// Material Icons
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

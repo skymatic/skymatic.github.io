@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="container mt-5">
+  <h1 class="display-3 text-center">Blog</h1>
+
+  <ul class="list-unstyled">
+    {% for post in site.posts %}
+      <li class="media mb-1">
+        <div class="media-body">
+          <h2>{{ post.title | escape }}</h2>
+          <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+          {{ post.excerpt }}
+          <a href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="text-center mt-5">
+    <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
+      <i class="fa fa-rss" aria-hidden="true"></i> Subscribe to RSS
+    </a>
+  </p>
+</section>
