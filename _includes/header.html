@@ -6,10 +6,11 @@
         <img src="https://dummyimage.com/30x30" width="30" height="30" alt="{{ site.title }}">
       </a>
       <ul class="navbar-nav ml-auto">
-        {% for my_page in site.pages %}
-        {% if my_page.title %}
+        {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu >= 0' | sort: 'menu' %}
+        {% for page in menu_pages %}
+        {% if page.title %}
         <li class="nav-item">
-          <a class="nav-item nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+          <a class="nav-item nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
         </li>
         {% endif %}
         {% endfor %}
