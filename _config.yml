@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Awesome Company
+title: Skymatic
 feed:
   description: >
-    Awesome Company's Blog
+    Skymatic Blog
 lang: en
-baseurl: "/ghpages-bootstrap4" # the subpath of your site, e.g. /blog (must not end with /)
+baseurl: "" # the subpath of your site, e.g. /blog (must not end with /)
 
 # Build settings
 markdown: kramdown
