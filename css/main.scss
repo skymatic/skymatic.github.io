@@ -9,7 +9,14 @@
     background-image: url(http://placekitten.com/g/1000/400);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
     color: white;
+
+    text-shadow: 1px 1px 2px black;
+
+    h1 {
+       text-shadow: 2px 2px 4px black;
+    }
 }
 
 // Sticky Footer:

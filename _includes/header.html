@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
     <div class="container d-flex">
       <a class="navbar-brand" href="{{site.baseurl}}/">
-        <img src="https://dummyimage.com/30x30" width="30" height="30" alt="{{ site.title }}">
+        <img src="{{site.baseurl}}/img/logo-white-30.png" width="30" height="30" srcset="{{site.baseurl}}/img/logo-white-30@2x.png 2x" alt="{{ site.title }}">
       </a>
       <ul class="navbar-nav ml-auto">
         {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu >= 0' | sort: 'menu' %}
