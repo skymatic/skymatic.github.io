@@ -20,7 +20,7 @@ $font-family-base:       $font-family-sans-serif;
 
 // Colors Overwrites
 
-// $white:  #fff;
+$white:  #fff;
 $gray-100: #f8f9fa;
 // $gray-200: #e9ecef;
 // $gray-300: #dee2e6;
@@ -54,3 +54,5 @@ $primary:       #4DADD8;
 
 $body-bg: $gray-100;
 $body-color: $gray-800;
+
+$navbar-dark-color: $white;

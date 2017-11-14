@@ -6,7 +6,7 @@
 @import 'bootstrap';
 
 .jumbotron {
-    background-image: url(http://placekitten.com/g/1000/400);
+    background-image: url({{site.baseurl}}/img/bg-generic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
