@@ -7,10 +7,14 @@
       </a>
       <ul class="navbar-nav ml-auto">
         {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu >= 0' | sort: 'menu' %}
-        {% for page in menu_pages %}
-        {% if page.title %}
+        {% for node in menu_pages %}
+        {% if node.title and page.url == node.url %}
+        <li class="nav-item active">
+          <a class="nav-item nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
+        </li>
+        {% elsif node.title %}
         <li class="nav-item">
-          <a class="nav-item nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
+          <a class="nav-item nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
         </li>
         {% endif %}
         {% endfor %}

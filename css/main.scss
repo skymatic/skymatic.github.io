@@ -19,6 +19,14 @@
     }
 }
 
+.navbar-nav {
+  .nav-item.active {
+    border-bottom-style: solid;
+    border-bottom-width: 0.2em;
+    border-bottom-color: $white;
+  }
+}
+
 // Sticky Footer:
 
 $footer-height: 150px;
