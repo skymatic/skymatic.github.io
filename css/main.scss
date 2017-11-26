@@ -5,34 +5,36 @@
 @import 'custom'; // variables for bootstrap
 @import 'bootstrap';
 
+@include media-breakpoint-down(md) {
+  h1, .h1 { font-size: $h2-font-size; }
+  h2, .h2 { font-size: $h3-font-size; }
+  h3, .h3 { font-size: $h4-font-size; }
+  h4, .h4 { font-size: $h5-font-size; }
+  h5, .h5 { font-size: $h6-font-size; }
+}
+
 .jumbotron {
-    background-image: url({{site.baseurl}}/img/bg-generic.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    color: white;
+  background-image: url({{site.baseurl}}/img/bg-generic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
 
+  h1 {
+    font-size: $font-size-base * 4.5;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  }
+
+  h2 {
+    font-weight: $font-weight-light;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  }
+
+  @include media-breakpoint-only(xs) {
     h1 {
-      font-size: 5em;
-      text-shadow: 2px 2px 4px black;
+      font-size: $font-size-base * 3.5;
     }
-
-    h2 {
-      font-size: 3em;
-      text-shadow: 1px 1px 2px black;
-    }
-
-    @include media-breakpoint-only(xs) {
-      h1 {
-        font-size: 4em;
-        text-shadow: 2px 2px 4px black;
-      }
-
-      h2 {
-        font-size: 2.5em;
-        text-shadow: 1px 1px 2px black;
-      }
-    }
+  }
 }
 
 .navbar-nav {
@@ -84,10 +86,8 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
