@@ -14,11 +14,11 @@
         {% for node in menu_pages %}
         {% if node.title and page.url == node.url %}
         <li class="nav-item active">
-          <a class="nav-item nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
+          <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
         </li>
         {% elsif node.title %}
         <li class="nav-item">
-          <a class="nav-item nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
+          <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
         </li>
         {% endif %}
         {% endfor %}
