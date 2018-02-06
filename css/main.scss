@@ -34,6 +34,28 @@ html {
   margin-bottom: -$border-width * 2;
 }
 
+// Sticky Footer
+
+$footer-height: 172px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $footer-height;
+}
+
+.site-footer {
+  background-color: $gray-100;
+  bottom: 0;
+  height: $footer-height;
+  line-height: $line-height-base;
+  position: absolute;
+  width: 100%;
+}
+
 // Material Icons
 
 .material-icons {
