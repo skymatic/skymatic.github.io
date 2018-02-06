@@ -1,30 +1,21 @@
-<header class="sticky-top" role="banner">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container d-flex">
-      <a class="navbar-brand" href="{{site.baseurl}}/">
-        <img src="{{site.baseurl}}/img/logo-white-30.png" width="30" height="30" srcset="{{site.baseurl}}/img/logo-white-30@2x.png 2x" alt="{{ site.title }}">
-      </a>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <!-- <div class="collapse navbar-collapse" id="navbar-nav"> -->
-      <ul class="navbar-nav ml-auto">
-        {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu >= 0' | sort: 'menu' %}
-        {% for node in menu_pages %}
-        {% if node.title and page.url == node.url %}
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
-        </li>
-        {% elsif node.title %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-      <!-- </div> -->
-    </div>
-  </nav>
-
-</header>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <div class="container d-flex flex-column flex-sm-row">
+    <a class="navbar-brand" href="{{site.baseurl}}/">
+      <img src="{{site.baseurl}}/img/logo-white-30.png" width="30" height="30" srcset="{{site.baseurl}}/img/logo-white-30@2x.png 2x" alt="{{ site.title }}">
+    </a>
+    <ul class="navbar-nav flex-row">
+      {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu >= 0' | sort: 'menu' %}
+      {% for node in menu_pages %}
+      {% if node.title and page.url == node.url %}
+      <li class="nav-item active">
+        <a class="nav-link p-2" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
+      </li>
+      {% elsif node.title %}
+      <li class="nav-item">
+        <a class="nav-link p-2" href="{{ node.url | prepend: site.baseurl }}">{{ node.title | escape }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

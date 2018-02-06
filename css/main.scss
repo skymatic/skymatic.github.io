@@ -1,15 +1,15 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset 'utf-8';
-@import 'custom';
+@charset "utf-8";
+@import "custom";
 
-@include media-breakpoint-down(md) {
-  h1, .h1 { font-size: $h2-font-size; }
-  h2, .h2 { font-size: $h3-font-size; }
-  h3, .h3 { font-size: $h4-font-size; }
-  h4, .h4 { font-size: $h5-font-size; }
-  h5, .h5 { font-size: $h6-font-size; }
+html {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
 }
 
 .jumbotron {
@@ -20,55 +20,18 @@
   color: white;
 
   h1 {
-    font-size: $font-size-base * 4.5;
-    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    text-shadow: 0 2px 2px rgba($black, .5);
   }
 
   .tagline {
-    font-size: $h2-font-size;
     font-weight: $font-weight-light;
-    text-shadow: 0 1px 2px rgba(0,0,0,.5);
-  }
-
-  @include media-breakpoint-only(xs) {
-    h1 {
-      font-size: $font-size-base * 3.5;
-    }
-
-    .tagline {
-      font-size: $h3-font-size;
-    }
+    text-shadow: 0 1px 2px rgba($black, .5);
   }
 }
 
-.navbar-nav {
-  .nav-item.active {
-    border-bottom-style: solid;
-    border-bottom-width: 0.2em;
-    border-bottom-color: $white;
-  }
-}
-
-// Sticky Footer:
-
-$footer-height: 150px;
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: $footer-height;
-}
-
-.site-footer {
-  background-color: $gray-100;
-  position: absolute;
-  bottom: 0;
-  height: $footer-height;
-  line-height: 1.5em;
-  width: 100%;
+.navbar-nav .nav-item.active {
+  border-bottom: $border-width * 2 solid $white;
+  margin-bottom: -$border-width * 2;
 }
 
 // Material Icons

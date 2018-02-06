@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<section class="jumbotron jumbotron-fluid">
+<header class="jumbotron jumbotron-fluid">
   <div class="container mt-4 p-0 text-center">
-    <h1>{{ page.heading }}</h1>
-    <p class="tagline">{{ page.tagline }}</p>
+    <h1 class="display-3">{{ page.heading }}</h1>
+    <p class="h2 tagline">{{ page.tagline }}</p>
   </div>
-</section>
+</header>
 
-{{ content }}
+<div class="container my-5">
+  {{ content }}
+</div>
