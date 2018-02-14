@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<header class="jumbotron jumbotron-fluid">
-  <div class="container mt-4 p-0 text-center">
-    <h1 class="display-3">{{ page.heading }}</h1>
+<header class="jumbotron jumbotron-fluid jumbotron-generic" role="banner">
+  <div class="container text-center mt-5">
+    <h1 class="display-4">{{ page.heading }}</h1>
     <p class="h2 tagline">{{ page.tagline }}</p>
   </div>
 </header>
 
-<div class="container my-5">
-  {{ content }}
-</div>
+{{ content }}

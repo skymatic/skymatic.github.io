@@ -5,4 +5,5 @@ gem 'github-pages', '~> 166', group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jemoji'
+  gem 'jekyll-redirect-from'
 end

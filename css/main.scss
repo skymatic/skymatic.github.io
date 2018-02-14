@@ -12,11 +12,34 @@ html {
   }
 }
 
-.jumbotron {
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.navbar {
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  -o-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.navbar .active {
+  border-bottom: $border-width * 2 solid $white;
+  margin-bottom: -$border-width * 2;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.jumbotron-generic {
   background-image: url({{site.baseurl}}/img/bg-generic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   color: white;
 
   h1 {
@@ -29,18 +52,22 @@ html {
   }
 }
 
-.navbar-nav .nav-item.active {
-  border-bottom: $border-width * 2 solid $white;
-  margin-bottom: -$border-width * 2;
+.jumbotron-empty {
+  height: 52.75px;
+  padding: 0;
+
+  @include media-breakpoint-up(md) {
+    height: 58px;
+  }
 }
 
 // Sticky Footer
 
-$footer-height: 172px;
+$footer-height: 212px;
 
 html {
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -54,29 +81,4 @@ body {
   line-height: $line-height-base;
   position: absolute;
   width: 100%;
-}
-
-// Material Icons
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
 }

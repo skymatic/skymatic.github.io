@@ -1,0 +1,30 @@
+---
+layout: with_jumbotron
+title: Events
+permalink: /events/
+heading: Veranstaltungen
+tagline: Wo Sie uns treffen
+---
+
+<section class="container mb-5">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Datum</th>
+          <th scope="col">Event</th>
+          <th scope="col">Ort</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for event in site.data.events %}
+        <tr>
+          <th scope="row">{{ event.date | date: "%Y-%m-%d" }}</th>
+          <td><a href="{{ event.url }}" target="_blank">{{ event.title }}</a></td>
+          <td>{{ event.location }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

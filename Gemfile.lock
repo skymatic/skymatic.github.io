@@ -215,6 +215,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 166)
+  jekyll-redirect-from
   jemoji
 
 RUBY VERSION
