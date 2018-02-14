@@ -1,6 +1,4 @@
 $(window).on('load', function() {
-  $('body').removeClass('preload');
-
   $('#navbar-nav').on('show.bs.collapse', function() {
     if ($(window).scrollTop() <= 0 && $('.navbar').hasClass('bg-transparent')) {
       $('.navbar').addClass('bg-primary');
