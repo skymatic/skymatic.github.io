@@ -3,7 +3,6 @@ title: Skymatic
 feed:
   description: >
     Skymatic Blog
-lang: en
 baseurl: "" # the subpath of your site, e.g. /blog (must not end with /)
 
 # Plugins

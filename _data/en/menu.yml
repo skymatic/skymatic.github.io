@@ -1,0 +1,17 @@
+- title: Services
+  url: /en/solutions/
+- title: References
+  url: /en/references/
+  dropdown:
+  - title: Clients
+    url: /en/references/clients/
+  - title: Press
+    url: /en/references/press/
+  dropdown_id: references
+- title: Events
+  url: /en/events/
+- title: About Us
+  url: /en/team/
+- title: Blog
+  url: https://cryptomator.org/blog/
+  external: true

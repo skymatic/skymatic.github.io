@@ -1,0 +1,30 @@
+---
+layout: en/with_jumbotron
+title: References
+permalink: /en/references/press/
+heading: References
+tagline: Press and Media Coverage
+---
+
+<section class="container mb-5">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Reference</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for article in site.data.references_press %}
+        <tr>
+          <th scope="row">{{ article.date | date: "%Y-%m-%d" }}</th>
+          <td><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></td>
+          <td>{{ article.source }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

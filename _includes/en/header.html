@@ -1,0 +1,73 @@
+<header class="fixed-top" role="navigation">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+    <div class="container">
+      {% if page.url == "/en/" %}
+      <a class="navbar-brand active" href="{{site.baseurl}}/en/">
+        <img src="{{site.baseurl}}/img/logo-nav.png" width="125" height="30" srcset="{{site.baseurl}}/img/logo-nav@2x.png 2x" alt="{{ site.title }}">
+      </a>
+      {% else %}
+      <a class="navbar-brand" href="{{site.baseurl}}/en/">
+        <img src="{{site.baseurl}}/img/logo-nav.png" width="125" height="30" srcset="{{site.baseurl}}/img/logo-nav@2x.png 2x" alt="{{ site.title }}">
+      </a>
+      {% endif %}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-nav">
+        <ul class="navbar-nav ml-auto">
+          {% for node in site.data.en/menu %}
+          {% if node.dropdown %}
+          {% if page.url contains node.url %}
+          <li class="nav-item dropdown active">
+            {% if page.url == node.url %}
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-{{node.dropdown_id}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ node.title }} <span class="sr-only">(current)</span></a>
+            {% else %}
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-{{node.dropdown_id}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ node.title }}</a>
+            {% endif %}
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-{{node.dropdown_id}}">
+              {% for sub_node in node.dropdown %}
+              {% if page.url == sub_node.url %}
+              <a class="dropdown-item active" href="{{ sub_node.url | prepend: site.baseurl }}">{{ sub_node.title }} <span class="sr-only">(current)</span></a>
+              {% else %}
+              <a class="dropdown-item" href="{{ sub_node.url | prepend: site.baseurl }}">{{ sub_node.title }}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </li>
+          {% else %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-{{node.dropdown_id}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ node.title }}</a>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-{{node.dropdown_id}}">
+              {% for sub_node in node.dropdown %}
+              <a class="dropdown-item" href="{{ sub_node.url | prepend: site.baseurl }}">{{ sub_node.title }}</a>
+              {% endfor %}
+            </div>
+          </li>
+          {% endif %}
+          {% else %}
+          {% if page.url contains node.url %}
+          <li class="nav-item active">
+            {% if node.external %}
+            <a class="nav-link" href="{{ node.url }}" target="_blank">{{ node.title }} <span class="sr-only">(current)</span> <i class="fas fa-external-link-alt"></i></a>
+            {% else %}
+            <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }} <span class="sr-only">(current)</span></a>
+            {% endif %}
+          </li>
+          {% else %}
+          <li class="nav-item">
+            {% if node.external %}
+            <a class="nav-link" href="{{ node.url }}" target="_blank">{{ node.title }} <i class="fas fa-external-link-alt"></i></a>
+            {% else %}
+            <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+            {% endif %}
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
