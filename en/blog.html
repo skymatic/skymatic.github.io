@@ -1,27 +1,32 @@
 ---
-layout: en/default
+layout: en/with_jumbotron
 title: Blog
 permalink: /en/blog/
-published: false
+heading: Blog
+tagline: Our latest news
 ---
 
-<h1 class="display-3 text-center">Blog</h1>
+{% assign sortedPosts = site.categories.en | where: 'published', true | sort: 'path', 'last' | reverse %}
 
-<ul class="list-unstyled">
-  {% for post in site.posts %}
-    <li class="media mb-1">
-      <div class="media-body">
-        <h2>{{ post.title | escape }}</h2>
-        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-        {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
+<section class="container mb-5">
+  {% for post in sortedPosts %}
+  <article class="border-bottom mb-3">
+    <div class="row">
+      <p class="col-sm-2">{{ post.date | date: "%Y-%m-%d" }}</p>
+      <header class="col-sm-10">
+        <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-sm-10 offset-sm-2">
+        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 320 }}</p>
       </div>
-    </li>
+    </div>
+  </article>
   {% endfor %}
-</ul>
-
-<p class="text-center mt-5">
-  <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
-    <i class="fa fa-rss" aria-hidden="true"></i> Subscribe to RSS
-  </a>
-</p>
+  <p class="text-center mt-5">
+    <a href="{{ '/en/feed.xml' | prepend: site.baseurl }}">
+      <i class="fas fa-rss" aria-hidden="true"></i> Subscribe to RSS
+    </a>
+  </p>
+</section>

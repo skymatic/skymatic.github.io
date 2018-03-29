@@ -1,0 +1,12 @@
+---
+# front matter to make sure, jekyll translates this scss file
+---
+@charset "utf-8";
+@import "custom-variables";
+@import "functions";
+@import "variables";
+@import "mixins";
+
+.img-author {
+  width: 48px;
+}

@@ -10,8 +10,7 @@
   dropdown_id: references
 - title: Events
   url: /en/events/
+- title: Blog
+  url: /en/blog/
 - title: About Us
   url: /en/team/
-- title: Blog
-  url: https://cryptomator.org/blog/
-  external: true

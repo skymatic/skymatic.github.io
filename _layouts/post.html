@@ -4,6 +4,13 @@ layout: default
 <header class="jumbotron jumbotron-fluid jumbotron-generic jumbotron-empty" role="banner"></header>
 
 <article class="container mb-5">
-  <h1 class="display-3 text-center">{{page.title}}</h1>
-  {{content}}
+  <h1><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a> / {{ page.title }}</h1>
+  <div class="border-bottom mb-3">
+    <div class="d-flex align-items-center mb-3">
+      <a class="mr-2" href="{{ page.authorlink }}" target="_blank"><img src="{{ page.authorimg }}" class="img-author rounded-circle"/></a>
+      <div class="text-muted">von <a href="{{ page.authorlink }}" target="_blank">{{ page.author }}</a> • <a href="{{ page.url }}">{{ page.date | date: "%Y-%m-%d" }}</a></div>
+    </div>
+    {% if page.notice %}<p><em>{{ page.notice }}</em></p>{% endif %}
+  </div>
+  {{ content }}
 </article>

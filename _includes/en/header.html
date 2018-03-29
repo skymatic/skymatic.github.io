@@ -48,19 +48,11 @@
           {% else %}
           {% if page.url contains node.url %}
           <li class="nav-item active">
-            {% if node.external %}
-            <a class="nav-link" href="{{ node.url }}" target="_blank">{{ node.title }} <span class="sr-only">(current)</span> <i class="fas fa-external-link-alt"></i></a>
-            {% else %}
             <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }} <span class="sr-only">(current)</span></a>
-            {% endif %}
           </li>
           {% else %}
           <li class="nav-item">
-            {% if node.external %}
-            <a class="nav-link" href="{{ node.url }}" target="_blank">{{ node.title }} <i class="fas fa-external-link-alt"></i></a>
-            {% else %}
             <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
-            {% endif %}
           </li>
           {% endif %}
           {% endif %}
