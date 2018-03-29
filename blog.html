@@ -3,7 +3,7 @@ layout: with_jumbotron
 title: Blog
 permalink: /blog/
 heading: Blog
-tagline: Aktuelle Nachrichten
+tagline: Was uns beschäftigt
 ---
 
 {% assign sortedPosts = site.categories.de | where: 'published', true | sort: 'path', 'last' | reverse %}

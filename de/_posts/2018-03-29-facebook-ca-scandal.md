@@ -3,7 +3,7 @@ layout: post
 title: "Facebook & CA – The Scandal That Is None"
 date: 2018-03-29
 author: Christian Schmickler
-authorlink: https://github.com/BonnChris
+authorlink: https://www.linkedin.com/in/christian-schmickler-1966627a/
 authorimg: https://avatars.githubusercontent.com/u/18163988?s=96
 notice: Dieser Blog-Post ist nicht auf Deutsch verfügbar.
 stylesheets: ['/css/blog-post.css']
@@ -14,15 +14,21 @@ Cambridge Analytica has obtained data from 50 million Facebook users via a third
 So what is the scandal?
 
 Is it a)? **Breach of Facebook Security**
-> According to [Facebook's platform policy “for developers”](https://developers.facebook.com/policy){:target="_blank"}, the third-party application involved should not have obtained most of this data: Besides the data from people who have agreed to the collection of their profile data, also personal data of their Facebook friends has been gathered. Even though these “friends' data” is freely available to third-party applications, it may not be exploited – which is the case here.
+<div class="ml-3" markdown="1">
+According to [Facebook's platform policy “for developers”](https://developers.facebook.com/policy){:target="_blank"}, the third-party application involved should not have obtained most of this data: Besides the data from people who have agreed to the collection of their profile data, also personal data of their Facebook friends has been gathered. Even though these “friends' data” is freely available to third-party applications, it may not be exploited – which is the case here.
+</div>
 
 Or is it b)? **Manipulation of people with individualized content**
-> It becomes obvious to everyone that individual data can actually be used to influence people to pretty much any kind of economic or political end.
+<div class="ml-3" markdown="1">
+It becomes obvious to everyone that individual data can actually be used to influence people to pretty much any kind of economic or political end.
+</div>
 
 Or is it c)? **Facebook may have indirectly contributed to Trump and Brexit**
-> The election of Trump and the vote for Brexit are seen be many people as disastrous and if Facebook data may have played a role in these outcomes, this just must be a scandal.
+<div class="ml-3" markdown="1">
+The election of Trump and the vote for Brexit are seen be many people as disastrous and if Facebook data may have played a role in these outcomes, this just must be a scandal.
+</div>
 
-Marc Zuckerberg is now addressing and apologizing for the a)-part. However, this very fact has been known to the public for two years and four months now (see: [Ted Cruz using firm that harvested data on millions of unwitting Facebook users](https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data){:target="_blank"} on The Guardian) and nobody seemed to care in 2015. Also, the extent to which Facebook data had an impact on Trump's election and the Brexit vote (<i class="fas fa-arrow-right" aria-hidden="true"></i> c) is rather obscure.
+Marc Zuckerberg is now addressing and apologizing for the a)-part. However, this very fact has been known to the public [for two years and four months now](https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data){:target="_blank"} and nobody seemed to care in 2015. Also, the extent to which Facebook data had an impact on Trump's election and the Brexit vote (<i class="fas fa-arrow-right" aria-hidden="true"></i> c) is rather obscure.
 
 Therefore, the actual “scandal” must be b): The widespread realization that giving away personal data and having “nothing to hide” may well have negative consequences – individually and collectively.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Im Internet sind wir alle Draufgänger"
 date: 2017-03-15
 author: Christian Schmickler
-authorlink: https://github.com/BonnChris
+authorlink: https://www.linkedin.com/in/christian-schmickler-1966627a/
 authorimg: https://avatars.githubusercontent.com/u/18163988?s=96
 stylesheets: ['/css/blog-post.css']
 published: true
