@@ -10,3 +10,12 @@
 .img-author {
   width: 48px;
 }
+
+blockquote {
+  border-left: $border-width * 4 solid $border-color;
+  padding: $spacer * .75 $spacer;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
