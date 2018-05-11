@@ -214,12 +214,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (~> 166)
-  jekyll-redirect-from
-  jemoji
-
-RUBY VERSION
-   ruby 2.4.2p198
+  github-pages!
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
