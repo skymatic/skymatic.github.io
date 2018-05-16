@@ -19,9 +19,16 @@ html {
   transition: background-color 300ms ease-out;
 }
 
-.navbar .active {
-  border-bottom: $border-width * 2 solid $white;
-  margin-bottom: -$border-width * 2;
+.navbar .nav-item.active {
+  @include media-breakpoint-down(sm) {
+    border-left: $border-width * 2 solid $white;
+    margin-left: -$navbar-nav-link-padding-x;
+    padding-left: calc(#{$navbar-nav-link-padding-x} - #{$border-width} * 2);
+  }
+  @include media-breakpoint-up(md) {
+    border-bottom: $border-width * 2 solid $white;
+    margin-bottom: -$border-width * 2;
+  }
 }
 
 .bg-transparent {
