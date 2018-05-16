@@ -1,0 +1,39 @@
+---
+layout: null
+pages:
+- url: ''
+  priority: 1.0
+- url: '/solutions'
+  priority: 0.8
+- url: '/references'
+  priority: 0.8
+- url: '/references/clients'
+  priority: 0.8
+- url: '/references/press'
+  priority: 0.8
+- url: '/events'
+  priority: 0.8
+- url: '/blog'
+  priority: 0.8
+- url: '/team'
+  priority: 0.8
+- url: '/contact'
+  priority: 0.5
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for p in page.pages %}<!-- {{ site.url }}{{ p.url }} -->
+  <url>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    <priority>{{ p.priority }}</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ p.url }}" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ p.url }}" />
+  </url>
+  <url>
+    <loc>{{ site.url }}/en{{ p.url }}</loc>
+    <priority>{{ p.priority }}</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ p.url }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ p.url }}" />
+  </url>
+{% endfor %}
+</urlset>

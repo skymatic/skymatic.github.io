@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign sortedPostsDe = site.categories.de | where: 'published', true | sort: 'path', 'last' | reverse %}
+{% assign sortedPostsEn = site.categories.en | where: 'published', true | sort: 'path', 'last' | reverse %}
+{% for postDe in sortedPostsEn %}<!-- {{ postDe.title | xml_escape }} -->
+{% assign postEn = sortedPostsDe[forloop.index0] %}
+  <url>
+    <loc>{{ site.url }}{{ postDe.url }}</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ postDe.url }}" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ postEn.url }}" />
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ postEn.url }}</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ postEn.url }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ postDe.url }}" />
+  </url>
+{% endfor %}
+</urlset>
