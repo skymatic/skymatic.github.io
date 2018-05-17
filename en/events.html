@@ -13,6 +13,7 @@ tagline: Where You Meet Us
         <tr>
           <th scope="col">Date</th>
           <th scope="col">Event</th>
+          <th scope="col">Organizer</th>
           <th scope="col">Location</th>
         </tr>
       </thead>
@@ -21,6 +22,7 @@ tagline: Where You Meet Us
         <tr>
           <th scope="row">{{ event.date | date: "%Y-%m-%d" }}</th>
           <td><a href="{{ event.url }}" target="_blank">{{ event.title }}</a></td>
+          <td>{{ event.organizer }}</td>
           <td>{{ event.location }}</td>
         </tr>
         {% endfor %}
