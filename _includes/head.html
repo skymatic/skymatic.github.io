@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>{{ site.title }}{% if page.title %} • {{ page.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
   {% for stylesheet in page.stylesheets %}

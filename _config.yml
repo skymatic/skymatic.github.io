@@ -1,9 +1,9 @@
 # Site settings
 title: Skymatic
-feed:
-  description: >
-    Skymatic Blog
-baseurl: "" # the subpath of your site, e.g. /blog (must not end with /)
+description: >
+  Skymatic develops encryption and IT security solutions and finds answers to questions on how to design digitalization to the benefit of companies and society.
+baseurl: ""
+url: "https://skymatic.de"
 
 # Plugins
 plugins:
@@ -15,7 +15,5 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-
-# Emoji
 emoji:
   src: "/img"
