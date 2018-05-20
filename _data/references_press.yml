@@ -1,3 +1,11 @@
+- date: 2018-02-10
+  title: "Mit Cryptomator unter Linux die Daten in der Cloud verschlüsseln"
+  url: https://linuxmint-user.de/mit-cryptomator-unter-linux-die-daten-in-der-cloud-verschluesseln/
+  source: linuxmint-user.de
+- date: 2018-02-08
+  title: "Cryptomator - Encrypt your Cloud Data Files on Linux"
+  url: https://linoxide.com/tools/cryptomator-encrypt-cloud-data-files-linux/
+  source: linoxide.com
 - date: 2018-02-02
   title: "Von Sicherheit und Tequila: Der erste Bonner Cyber Security Slam"
   url: http://www.gsi-bonn.de/aktuelles/details/news/detail/News/von-sicherheit-und-tequila-der-erste-bonner-cyber-security-slam.html
@@ -10,10 +18,30 @@
   title: "Daten in der Cloud sicher verschlüsseln"
   url: https://www.heise.de/tipps-tricks/Daten-in-der-Cloud-sicher-verschluesseln-3952178.html
   source: heise.de
+- date: 2018-01-11
+  title: "Clouded Security: Auto-Encrypt Anything Before Uploading, with Cryptomator"
+  url: http://wayoflinux.com/blog/secure-the-cloud-with-cryptomator
+  source: wayoflinux.com
+- date: 2017-12-12
+  title: "Vorgestellt: Daten mit Cryptomator unter iOS für die Cloud verschlüsseln"
+  url: https://www.cupertino-dance.de/vorgestellt-daten-mit-cryptomator-unter-ios-fuer-die-cloud-verschluesseln/
+  source: cupertino-dance.de
+- date: 2017-12-07
+  title: "Cryptomator: Cloud-Daten auf Dropbox und Co. verschlüsseln"
+  url: https://www.pc-magazin.de/ratgeber/cryptomator-dropbox-onedrive-google-drive-anleitung-daten-verschluesseln-3198750.html
+  source: pc-magazin.de
 - date: 2017-11-27
   title: "GMX und Web.de bieten verschlüsselten Cloud-Speicher"
   url: https://www.heise.de/newsticker/meldung/GMX-und-Web-de-bieten-verschluesselten-Cloud-Speicher-3902036.html
   source: heise.de
+- date: 2017-11-27
+  title: "WEB.DE und GMX starten Ende-zu-Ende-Verschlüsselung auf Basis Cryptomator"
+  url: https://stadt-bremerhaven.de/web-de-und-gmx-starten-ende-zu-ende-verschluesselung-auf-basis-cryptomator/
+  source: stadt-bremerhaven.de
+- date: 2017-11-02
+  title: "Make Your Cloud Great Again – Cloud Encryption with Cryptomator"
+  url: http://ideahub.eu/business/make-your-cloud-great-again-cloud-encryption-with-cryptomator/
+  source: ideahub.eu
 - date: 2017-03-27
   title: "Top 50 Start-up Cryptomator macht Daten in der Cloud sicher"
   url: https://www.youtube.com/watch?v=nnMwiqGAxGo
