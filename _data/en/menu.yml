@@ -1,5 +1,12 @@
 - title: Services
-  url: /en/solutions/
+  url: /en/services/
+  dropdown:
+  - title: Products
+    url: /en/services/products/
+  - title: Consulting
+    url: /en/services/consulting/
+  - title: Talks
+    url: /en/services/talks/
 - title: References
   url: /en/references/
   dropdown:

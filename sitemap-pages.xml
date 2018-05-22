@@ -3,9 +3,11 @@ layout: null
 pages:
 - url: ''
   priority: 1.0
-- url: '/solutions'
+- url: '/services/products'
   priority: 0.8
-- url: '/references'
+- url: '/services/consulting'
+  priority: 0.8
+- url: '/services/talks'
   priority: 0.8
 - url: '/references/clients'
   priority: 0.8
