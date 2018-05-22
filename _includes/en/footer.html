@@ -25,7 +25,11 @@
       <div class="col-md-4 order-md-6 col-12 order-12 text-center">
         <img src="{{site.baseurl}}/img/logo-500.png" width="60" height="60" alt="Logo">
         <p class="text-muted">&copy; {{site.title}} 2018</p>
-        <p class="text-muted"><a href="{{site.baseurl}}/">Deutsch</a> • English</p>
+        {% if page.url contains ".html" %}
+        <p class="text-muted"><a href="{{ page.url | replace: '/en/', '/de/' | prepend: site.baseurl }}">Deutsch</a> • English</p>
+        {% else %}
+        <p class="text-muted"><a href="{{ page.url | replace: '/en/', '/' | prepend: site.baseurl }}">Deutsch</a> • English</p>
+        {% endif %}
       </div>
 
       <div class="col-md-4 order-md-12 col-6 text-right">

@@ -58,7 +58,7 @@
           {% endif %}
           {% endfor %}
           <li class="nav-item">
-            <a class="nav-link" href="{{site.baseurl}}/en/">EN</a>
+            <a class="nav-link" href="{{ page.url | replace: '/de/', '/' | prepend: '/en' | prepend: site.baseurl }}">EN</a>
           </li>
         </ul>
       </div>

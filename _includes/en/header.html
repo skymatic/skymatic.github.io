@@ -58,7 +58,11 @@
           {% endif %}
           {% endfor %}
           <li class="nav-item">
-            <a class="nav-link" href="{{site.baseurl}}/">DE</a>
+            {% if page.url contains ".html" %}
+            <a class="nav-link" href="{{ page.url | replace: '/en/', '/de/' | prepend: site.baseurl }}">DE</a>
+            {% else %}
+            <a class="nav-link" href="{{ page.url | replace: '/en/', '/' | prepend: site.baseurl }}">DE</a>
+            {% endif %}
           </li>
         </ul>
       </div>
