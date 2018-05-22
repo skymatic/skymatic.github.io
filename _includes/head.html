@@ -9,7 +9,7 @@
   {% for stylesheet in page.stylesheets %}
   <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
   {% endfor %}
-  <link rel="stylesheet" href="/css/fontawesome-5.0.7-all.css">
+  <link rel="stylesheet" href="/css/fontawesome-all.css">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl }}">
   <link rel="alternate" hreflang="en" href="{{ page.url | replace: 'index.html', '' | prepend: '/en' | prepend: site.baseurl }}">
