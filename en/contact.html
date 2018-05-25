@@ -7,12 +7,53 @@ tagline: We are here for you
 ---
 
 <section class="container mb-5">
+  <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+    <img class="img-fluid mr-0 mr-lg-5" src="{{site.baseurl}}/img/contact-form.png" srcset="{{site.baseurl}}/img/contact-form@2x.png 2x" width="282" alt="Contact form" />
+    <div class="flex-fill">
+      <h2 class="text-center text-lg-left mb-3">Contact Form</h2>
+      <form id="contact-form" action="https://api.skymatic.de/contact/contact.php">
+        <div class="form-group">
+          <label for="contact-company">Company Name (optional)</label>
+          <input type="text" class="form-control" id="contact-company">
+        </div>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" class="form-control" id="contact-name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email Address</label>
+          <input type="email" class="form-control" id="contact-email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-phone">Phone Number (optional)</label>
+          <input type="tel" class="form-control" id="contact-phone">
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Your Message</label>
+          <textarea class="form-control" id="contact-message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <small class="form-text text-muted">Notice: The connection is encrypted. Your data is securely transferred to and stored on our server.
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-outline-primary"><i class="far fa-envelope" aria-hidden="true"></i> Submit</button>
+        </div>
+      </form>
+      <p id="contact-success" class="text-center text-lg-left d-none">:envelope: Your message has been sent successfully.<br>You will hear from us soon.</p>
+      <p id="contact-error" class="text-danger d-none">An error has occurred while sending your message.</p>
+    </div>
+  </div>
+</section>
+
+<div class="container mb-5"><hr></div>
+
+<section class="container mb-5">
   <div class="row">
-    <div class="col-12 col-lg-6 d-flex flex-column align-items-center mb-5">
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
       <img class="img-fluid mb-3" src="{{site.baseurl}}/img/contact-email.png" srcset="{{site.baseurl}}/img/contact-email@2x.png 2x" width="256" alt="Contact via email" />
       <p>Email: <a href="mailto:sales@skymatic.de">sales [at] skymatic [dot] de</a></p>
     </div>
-    <div class="col-12 col-lg-6 d-flex flex-column align-items-center mb-5">
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
       <img class="img-fluid mb-3" src="{{site.baseurl}}/img/contact-address.png" srcset="{{site.baseurl}}/img/contact-address@2x.png 2x" width="295" alt="Skymatic location" />
       <p>Skymatic UG (haftungsbeschränkt)<br>Grantham-Allee 2-8<br>53757 Sankt Augustin<br>Germany</p>
     </div>

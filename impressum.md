@@ -18,7 +18,8 @@ Christian Schmickler<br/>
 Sebastian Stenzel
 
 ## Kontakt:
-E-Mail: info [at] skymatic [dot] de
+E-Mail: info [at] skymatic [dot] de<br/>
+[Kontaktformular](/contact/)
 
 ## Registereintrag:
 Eintragung im Handelsregister.<br/>
