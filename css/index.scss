@@ -14,18 +14,17 @@
   background-position: center top;
   color: white;
   height: 100vh;
-
-  h1 {
-    text-shadow: 0 2px 2px rgba($black, .5);
-  }
 }
 
 .slogan {
-  line-height: $display-line-height;
-  font-size: 2.5rem;
-  font-weight: $font-weight-light;
+  font-size: 3rem;
+  text-shadow: 0 2px 2px rgba($black, .5);
 
-  @include media-breakpoint-up(sm) {
-    font-size: 3rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 2.75rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 2.25rem;
   }
 }
