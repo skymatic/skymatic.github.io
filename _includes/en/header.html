@@ -59,9 +59,9 @@
           {% endfor %}
           <li class="nav-item">
             {% if page.url contains ".html" %}
-            <a class="nav-link" href="{{ page.url | replace: '/en/', '/de/' | prepend: site.baseurl }}">DE</a>
+            <a class="nav-link" href="{{ page.url | replace: '/en/', '/de/' | prepend: site.baseurl }}"><i class="fas fa-globe" aria-hidden="true"></i> Deutsch</a>
             {% else %}
-            <a class="nav-link" href="{{ page.url | replace: '/en/', '/' | prepend: site.baseurl }}">DE</a>
+            <a class="nav-link" href="{{ page.url | replace: '/en/', '/' | prepend: site.baseurl }}"><i class="fas fa-globe" aria-hidden="true"></i> Deutsch</a>
             {% endif %}
           </li>
         </ul>
