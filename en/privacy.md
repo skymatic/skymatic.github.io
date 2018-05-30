@@ -2,6 +2,7 @@
 layout: en/markdown
 title: Privacy Policy
 permalink: /en/privacy/
+noindex: true
 ---
 
 # Datenschutzerklärung

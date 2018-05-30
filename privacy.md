@@ -2,6 +2,7 @@
 layout: markdown
 title: Datenschutzerklärung
 permalink: /privacy/
+noindex: true
 ---
 
 # Datenschutzerklärung

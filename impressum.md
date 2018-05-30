@@ -2,6 +2,7 @@
 layout: markdown
 title: Impressum
 permalink: /impressum/
+noindex: true
 ---
 
 # Impressum
