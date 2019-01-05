@@ -12,13 +12,6 @@ html {
   }
 }
 
-.navbar {
-  -webkit-transition: background-color 300ms ease-out;
-  -moz-transition: background-color 300ms ease-out;
-  -o-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
-}
-
 .navbar .nav-item.active {
   @include media-breakpoint-down(sm) {
     border-left: $border-width * 2 solid $white;
@@ -29,10 +22,6 @@ html {
     border-bottom: $border-width * 2 solid $white;
     margin-bottom: -$border-width * 2;
   }
-}
-
-.bg-transparent {
-  background: transparent !important;
 }
 
 .jumbotron-generic {
