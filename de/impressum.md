@@ -1,5 +1,5 @@
 ---
-layout: markdown
+layout: de/markdown
 title: Impressum
 permalink: /impressum/
 noindex: true

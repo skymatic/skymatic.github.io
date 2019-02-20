@@ -1,5 +1,5 @@
 ---
-layout: markdown
+layout: de/markdown
 title: Datenschutzerklärung
 permalink: /privacy/
 noindex: true

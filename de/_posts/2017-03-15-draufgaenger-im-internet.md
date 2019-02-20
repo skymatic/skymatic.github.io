@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: de/post
 title: "Im Internet sind wir alle Draufgänger"
 date: 2017-03-15
 author: Christian Schmickler

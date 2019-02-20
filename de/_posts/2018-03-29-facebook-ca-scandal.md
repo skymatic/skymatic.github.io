@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: de/post
 title: "Facebook & CA – The Scandal That Is None"
 date: 2018-03-29
 author: Christian Schmickler
