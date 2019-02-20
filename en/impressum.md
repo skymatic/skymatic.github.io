@@ -4,7 +4,6 @@ title: Impressum
 permalink: /en/impressum/
 noindex: true
 ---
-
 # Impressum
 
 ## Angaben gemäß § 5 TMG:

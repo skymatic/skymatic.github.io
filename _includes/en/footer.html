@@ -4,51 +4,27 @@
     <div class="row justify-content-between">
       <div class="col-md-4 order-md-1 col-6 text-left">
         <ul class="list-unstyled">
-          <li>
-            <a href="{{site.baseurl}}/en/contact/">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="{{site.baseurl}}/en/impressum/">
-              Impressum
-            </a>
-          </li>
-          <li>
-            <a href="{{site.baseurl}}/en/privacy/">
-              Privacy Policy
-            </a>
-          </li>
+          <li><a href="{{site.baseurl}}/en/contact/">Contact</a></li>
+          <li><a href="{{site.baseurl}}/en/impressum/">Impressum</a></li>
+          <li><a href="{{site.baseurl}}/en/privacy/">Privacy Policy</a></li>
         </ul>
       </div>
 
       <div class="col-md-4 order-md-6 col-12 order-12 text-center">
         <img src="{{site.baseurl}}/img/logo-500.png" width="60" height="60" alt="Logo">
         <p class="text-muted">&copy; {{site.title}} 2019</p>
-        {% if page.url contains ".html" %}
+{% if page.url contains ".html" %}
         <p class="text-muted"><a href="{{ page.url | replace: '/en/', '/de/' | prepend: site.baseurl }}">Deutsch</a> • English</p>
-        {% else %}
+{% else %}
         <p class="text-muted"><a href="{{ page.url | replace: '/en/', '/' | prepend: site.baseurl }}">Deutsch</a> • English</p>
-        {% endif %}
+{% endif %}
       </div>
 
       <div class="col-md-4 order-md-12 col-6 text-right">
         <ul class="list-unstyled">
-          <li>
-            <a href="https://github.com/cryptomator" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://facebook.com/SkymaticDE" target="_blank">
-              <i class="fab fa-facebook"></i> Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/SkymaticDE" target="_blank">
-              <i class="fab fa-twitter"></i> Twitter
-            </a>
-          </li>
+          <li><a href="https://github.com/cryptomator" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://facebook.com/SkymaticDE" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://twitter.com/SkymaticDE" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
         </ul>
       </div>
     </div>

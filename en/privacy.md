@@ -4,7 +4,6 @@ title: Privacy Policy
 permalink: /en/privacy/
 noindex: true
 ---
-
 # Datenschutzerklärung
 
 ## Datenschutz

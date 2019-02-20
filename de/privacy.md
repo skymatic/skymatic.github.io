@@ -4,7 +4,6 @@ title: Datenschutzerklärung
 permalink: /privacy/
 noindex: true
 ---
-
 # Datenschutzerklärung
 
 ## Datenschutz

@@ -4,6 +4,7 @@ layout: en/default
 <header class="jumbotron jumbotron-fluid jumbotron-generic jumbotron-empty" role="banner"></header>
 
 <article class="container mb-5">
+
   <h1><a href="{{ '/en/blog' | prepend: site.baseurl }}">Blog</a> / {{ page.title }}</h1>
   <div class="border-bottom mb-3">
     <div class="d-flex align-items-center mb-3">
@@ -12,5 +13,7 @@ layout: en/default
     </div>
     {% if page.notice %}<p><em>{{ page.notice }}</em></p>{% endif %}
   </div>
-  {{ content }}
+
+{{ content }}
+
 </article>

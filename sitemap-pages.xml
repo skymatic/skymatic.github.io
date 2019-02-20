@@ -3,15 +3,11 @@ layout: null
 pages:
 - url: ''
   priority: 1.0
-- url: '/services/products'
+- url: '/products'
   priority: 0.8
-- url: '/services/talks'
+- url: '/clients'
   priority: 0.8
-- url: '/references/clients'
-  priority: 0.8
-- url: '/references/press'
-  priority: 0.8
-- url: '/events'
+- url: '/press'
   priority: 0.8
 - url: '/blog'
   priority: 0.8

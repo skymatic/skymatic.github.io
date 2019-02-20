@@ -1,20 +1,9 @@
-- title: Services
-  url: /en/services/
-  dropdown:
-  - title: Products
-    url: /en/services/products/
-  - title: Talks
-    url: /en/services/talks/
-- title: References
-  url: /en/references/
-  dropdown:
-  - title: Clients
-    url: /en/references/clients/
-  - title: Press
-    url: /en/references/press/
-  dropdown_id: references
-- title: Events
-  url: /en/events/
+- title: Products
+  url: /en/products/
+- title: Clients
+  url: /en/clients/
+- title: Press
+  url: /en/press/
 - title: Blog
   url: /en/blog/
 - title: About Us

@@ -5,11 +5,10 @@ permalink: /blog/
 heading: Blog
 tagline: Was uns beschäftigt
 ---
-
 {% assign sortedPosts = site.categories.de | where: 'published', true | sort: 'path', 'last' | reverse %}
 
 <section class="container mb-5">
-  {% for post in sortedPosts %}
+{% for post in sortedPosts %}
   <article class="border-bottom mb-3">
     <div class="row">
       <p class="col-sm-2">{{ post.date | date: "%Y-%m-%d" }}</p>
@@ -23,7 +22,7 @@ tagline: Was uns beschäftigt
       </div>
     </div>
   </article>
-  {% endfor %}
+{% endfor %}
   <p class="text-center mt-5">
     <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
       <i class="fas fa-rss" aria-hidden="true"></i> RSS abonnieren

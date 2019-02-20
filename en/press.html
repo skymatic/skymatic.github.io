@@ -1,29 +1,29 @@
 ---
-layout: de/with_jumbotron
-title: Referenzen
-permalink: /references/press/
-heading: Referenzen
-tagline: Presse und Medienecho
+layout: en/with_jumbotron
+title: Press
+permalink: /en/press/
+redirect_from: /en/references/press/
+heading: Press
+tagline: Media Coverage
 ---
-
 <section class="container mb-5">
   <div class="table-responsive">
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">Datum</th>
-          <th scope="col">Referenz</th>
-          <th scope="col">Quelle</th>
+          <th scope="col">Date</th>
+          <th scope="col">Reference</th>
+          <th scope="col">Source</th>
         </tr>
       </thead>
       <tbody>
-        {% for article in site.data.references_press %}
+{% for article in site.data.press %}
         <tr>
           <th scope="row">{{ article.date | date: "%Y-%m-%d" }}</th>
           <td><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></td>
           <td>{{ article.source }}</td>
         </tr>
-        {% endfor %}
+{% endfor %}
       </tbody>
     </table>
   </div>
