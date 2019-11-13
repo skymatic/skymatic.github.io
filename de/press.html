@@ -19,9 +19,9 @@ tagline: Medienecho
       <tbody>
 {% for article in site.data.press %}
         <tr>
-          <th scope="row">{{ article.date | date: "%Y-%m-%d" }}</th>
+          <th class="text-nowrap" scope="row">{{ article.date | date: "%Y-%m-%d" }}</th>
           <td><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></td>
-          <td>{{ article.source }}</td>
+          <td class="text-nowrap">{{ article.source }}</td>
         </tr>
 {% endfor %}
       </tbody>
