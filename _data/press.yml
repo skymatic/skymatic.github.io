@@ -1,10 +1,14 @@
-- date: 2020-08-31
+- date: 2022-08-17
   title: "Endlich ist unsere Cloud Ende-zu-Ende-verschlüsselt"
   url: https://www.golem.de/news/cryptomator-endlich-ist-unsere-cloud-ende-zu-ende-verschluesselt-2208-167607.html
   source: golem.de
-- date: 2020-08-31
-  title: "OneDrive, Dropbox & Co perfekt absichern: So können Sie Daten unknackbar online speichern"
-  url: https://www.chip.de/news/OneDrive-Dropbox-und-Co-verschluesseln-So-gehts_152398420.html
+- date: 2022-06-23
+  title: "Cloud-Sicherheit: Mit Cryptomator Daten verschlüsseln"
+  url: https://www.heise.de/ratgeber/Cloud-Sicherheit-Mit-Cryptomator-Daten-verschluesseln-7146842.html
+  source: heise.de
+- date: 2021-11-09
+  title: "Viele machen diesen Fehler: Daten auf Online-Speichern unbedingt verschlüsseln"
+  url: https://www.chip.de/news/Viele-machen-diesen-Fehler-Daten-auf-Online-Speichern-unbedingt-verschluesseln_152398420.html
   source: chip.de
 - date: 2020-08-03
   title: "Kostenlose und geprüfte Verschlüsselung für die Cloud"
