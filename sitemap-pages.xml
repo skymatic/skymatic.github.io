@@ -13,6 +13,8 @@ pages:
   priority: 0.8
 - url: '/team'
   priority: 0.8
+- url: '/jobs'
+  priority: 0.8
 - url: '/contact'
   priority: 0.5
 ---
