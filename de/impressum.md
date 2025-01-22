@@ -39,5 +39,6 @@ Skymatic nimmt jedoch nicht an einem Streitbeilegungsverfahren vor einer Verbrau
 ## Soziale Medien
 Dieses Impressum gilt auch für die folgenden Auftritte in den sozialen Medien:
 
+Mastodon: [https://mastodon.social/@skymatic](https://mastodon.social/@skymatic){:target="_blank"}{:rel="noopener"}<br/>
 Facebook: [https://facebook.com/SkymaticDE](https://facebook.com/SkymaticDE){:target="_blank"}{:rel="noopener"}<br/>
 Twitter: [https://twitter.com/SkymaticDE](https://twitter.com/SkymaticDE){:target="_blank"}{:rel="noopener"}
