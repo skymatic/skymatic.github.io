@@ -5,8 +5,6 @@ pages:
   priority: 1.0
 - url: '/products'
   priority: 0.8
-- url: '/clients'
-  priority: 0.8
 - url: '/press'
   priority: 0.8
 - url: '/blog'
